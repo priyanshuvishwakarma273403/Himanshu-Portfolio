@@ -5,18 +5,124 @@ import b3 from '../assets/branding/b3.jpg';
 import b4 from '../assets/branding/b4.jpg';
 import b5 from '../assets/branding/b5.jpg';
 import b6 from '../assets/branding/b6.jpg';
+import b7 from '../assets/branding/b7.jpg';
+import b8 from '../assets/branding/b8.jpg';
+import b9 from '../assets/branding/b9.jpg';
+import b10 from '../assets/branding/b10.jpg';
+import b11 from '../assets/branding/b11.jpg';
+import b12 from '../assets/branding/b12.jpg';
+import b13 from '../assets/branding/b13.jpg';
+import b14 from '../assets/branding/b14.jpg';
+import b15 from '../assets/branding/b15.jpg';
+import b16 from '../assets/branding/b16.jpg';
+import b17 from '../assets/branding/b17.jpg';
+import b18 from '../assets/branding/b18.jpg';
+import b19 from '../assets/branding/b19.jpg';
+import b20 from '../assets/branding/b20.jpg';
+
+import bs1 from '../assets/blueStar/blue1.jpeg';
+import bs2 from '../assets/blueStar/blue2.jpeg';
+import bs3 from '../assets/blueStar/blue3.jpeg';
+import bs4 from '../assets/blueStar/blue4.jpeg';
+import bs5 from '../assets/blueStar/blue5.jpeg';
+import bs6 from '../assets/blueStar/blue6.jpeg';
+
+import z1 from '../assets/Zenpact/Z1.jpg';
+import z2 from '../assets/Zenpact/Z2.jpg';
+import z3 from '../assets/Zenpact/Z3.jpg';
+import z4 from '../assets/Zenpact/Z4.jpg';
+import z5 from '../assets/Zenpact/Z5.jpg';
+import z6 from '../assets/Zenpact/Z6.jpg';
+import z7 from '../assets/Zenpact/Z7.jpg';
+import z8 from '../assets/Zenpact/Z8.jpg';
+import z9 from '../assets/Zenpact/Z9.jpg';
+import z10 from '../assets/Zenpact/Z10.jpg';
+import z11 from '../assets/Zenpact/Z11.jpg';
+import z12 from '../assets/Zenpact/Z12.jpg';
+import z13 from '../assets/Zenpact/Z13.jpg';
+import z14 from '../assets/Zenpact/Z14.jpg';
+import z16 from '../assets/Zenpact/Z16.jpg';
+import z18 from '../assets/Zenpact/Z18.jpg';
+import z19 from '../assets/Zenpact/Z19.jpg';
+import z20 from '../assets/Zenpact/Z20.jpg';
+import z21 from '../assets/Zenpact/Z21.jpg';
+import z22 from '../assets/Zenpact/Z22.jpg';
+import z23 from '../assets/Zenpact/Z23.jpg';
+import z24 from '../assets/Zenpact/Z24.jpg';
+import z25 from '../assets/Zenpact/Z25.jpg';
+import z27 from '../assets/Zenpact/Z27.jpg';
+import z28 from '../assets/Zenpact/Z28.jpg';
+
+import l1 from '../assets/laser/l1.jpg';
+import l2 from '../assets/laser/l2.jpg';
+import l3 from '../assets/laser/l3.jpg';
+import l4 from '../assets/laser/l4.jpg';
+import l5 from '../assets/laser/l5.jpg';
+import l6 from '../assets/laser/l6.jpg';
+import l7 from '../assets/laser/l7.jpg';
+import l8 from '../assets/laser/l8.jpg';
+import l9 from '../assets/laser/l9.jpg';
+import l10 from '../assets/laser/l10.jpg';
+import l11 from '../assets/laser/l11.jpg';
+import l12 from '../assets/laser/l12.jpg';
+import l13 from '../assets/laser/l13.jpg';
+import l14 from '../assets/laser/l14.jpg';
+import l15 from '../assets/laser/l15.jpg';
+import l18 from '../assets/laser/l18.jpg';
+import l19 from '../assets/laser/l19.jpg';
+import ld14 from '../assets/laser/download (14).jpg';
+import ld16 from '../assets/laser/download (16).jpg';
+import ld17 from '../assets/laser/download (17).jpg';
 
 import v1 from '../assets/vector/v1.jpg';
 import v2 from '../assets/vector/v2.jpg';
 import v3 from '../assets/vector/v3.jpg';
 import v4 from '../assets/vector/v4.jpg';
 import v5 from '../assets/vector/v5.jpg';
+import v6 from '../assets/vector/v6.jpg';
+import v7 from '../assets/vector/v7.jpg';
+import v8 from '../assets/vector/v8.jpg';
+import v9 from '../assets/vector/v9.jpg';
+import v10 from '../assets/vector/v10.jpg';
+import v11 from '../assets/vector/v11.jpg';
+import v12 from '../assets/vector/v12.jpg';
+import v14 from '../assets/vector/v14.jpg';
+import v13extra from '../assets/vector/13.jpg';
 
 import c1 from '../assets/creative/01.jpg';
 import c2 from '../assets/creative/02.jpg';
 import c3 from '../assets/creative/03.jpg';
 import c4 from '../assets/creative/04.jpg';
 import c5 from '../assets/creative/05.jpg';
+import c6 from '../assets/creative/06.jpg';
+import c7 from '../assets/creative/07.jpg';
+import c8 from '../assets/creative/08.jpg';
+import c9 from '../assets/creative/09.jpg';
+import c10 from '../assets/creative/10.jpg';
+import c11 from '../assets/creative/11.jpg';
+import c12 from '../assets/creative/12.jpg';
+import c13 from '../assets/creative/13.jpg';
+import c14 from '../assets/creative/14.jpg';
+import c15 from '../assets/creative/15.jpg';
+
+import lo1 from '../assets/logo/l1.jpg';
+import lo2 from '../assets/logo/l2.jpg';
+import lo3 from '../assets/logo/l3.jpg';
+import lo4 from '../assets/logo/l4.jpg';
+import lo5 from '../assets/logo/l5.jpg';
+import lo6 from '../assets/logo/l6.jpg';
+import lo7 from '../assets/logo/l7.jpg';
+import lo8 from '../assets/logo/l8.jpg';
+import lo9 from '../assets/logo/l9.jpg';
+import lo10 from '../assets/logo/l10.jpg';
+import lo11 from '../assets/logo/l11.jpg';
+import lo12 from '../assets/logo/l12.jpg';
+import lo13 from '../assets/logo/l13.jpg';
+import lo14 from '../assets/logo/l14.jpg';
+import lo15 from '../assets/logo/l15.jpg';
+import lo16 from '../assets/logo/l16.jpg';
+import lo17 from '../assets/logo/l17.jpg';
+import lo18 from '../assets/logo/l18.jpg';
 
 import g1 from '../assets/gym/g1.jpg';
 import g2 from '../assets/gym/g2.jpg';
@@ -29,6 +135,15 @@ import s3 from '../assets/Sports/s3.jpg';
 import s4 from '../assets/Sports/s4.jpg';
 import s5 from '../assets/Sports/s5.jpg';
 import s6 from '../assets/Sports/s6.jpg';
+import s7 from '../assets/Sports/s7.jpg';
+import s8 from '../assets/Sports/s8.jpg';
+import s9 from '../assets/Sports/s9.jpg';
+import s10 from '../assets/Sports/s10.jpg';
+import s11 from '../assets/Sports/s11.jpg';
+import s12 from '../assets/Sports/s12.jpg';
+import s13 from '../assets/Sports/s13.jpg';
+import s14 from '../assets/Sports/s14.jpg';
+import s15 from '../assets/Sports/s15.jpg';
 
 import cn1 from '../assets/Cnc/c1.jpg';
 import cn2 from '../assets/Cnc/c2.jpg';
@@ -46,7 +161,7 @@ import cn13 from '../assets/Cnc/c13.jpeg';
 import cn14 from '../assets/Cnc/c14.jpeg';
 import cn15 from '../assets/Cnc/c15.jpg';
 
-export const brandingImages = [b1, b2, b3, b4, b5, b6];
+export const brandingImages = [b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b14, b15, b16, b17, b18, b19, b20];
 export const projects = [
     {
         id: 1,
@@ -63,6 +178,8 @@ export const projects = [
         featured: true,
         gradient: "from-indigo-900 via-blue-900 to-slate-900",
         accentColor: "#6366f1",
+        coverImage: "/cover/genpact.png",
+        images: [z1, z2, z3, z4, z5, z6, z7, z8, z9, z10, z11, z12, z13, z14, z16, z18, z19, z20, z21, z22, z23, z24, z25, z27, z28],
     },
     {
         id: 2,
@@ -79,6 +196,8 @@ export const projects = [
         featured: true,
         gradient: "from-blue-900 via-cyan-900 to-slate-900",
         accentColor: "#3b82f6",
+        coverImage: "/cover/bluestar.png",
+        images: [bs1, bs2, bs3, bs4, bs5, bs6],
     },
     {
         id: 3,
@@ -95,6 +214,7 @@ export const projects = [
         featured: true,
         gradient: "from-violet-900 via-purple-900 to-slate-900",
         accentColor: "#8b5cf6",
+        coverImage: "/cover/aerocity.png",
     },
     {
         id: 9,
@@ -111,7 +231,8 @@ export const projects = [
         featured: false,
         gradient: "from-sky-900 via-blue-900 to-slate-900",
         accentColor: "#0ea5e9",
-        images: [v1, v2, v3, v4, v5],
+        coverImage: "/cover/Vector Illustration & Tracing.png",
+        images: [v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v14, v13extra],
     },
     {
         id: 10,
@@ -128,6 +249,8 @@ export const projects = [
         featured: false,
         gradient: "from-red-900 via-orange-900 to-slate-900",
         accentColor: "#ef4444",
+        coverImage: "/cover/Laser Cutting.png",
+        images: [l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l18, l19, ld14, ld16, ld17],
     },
     {
         id: 12,
@@ -144,6 +267,7 @@ export const projects = [
         featured: false,
         gradient: "from-teal-900 via-cyan-900 to-slate-900",
         accentColor: "#14b8a6",
+        coverImage: "/cover/cnc-decorative.png",
     },
     {
         id: 13,
@@ -160,7 +284,26 @@ export const projects = [
         featured: true,
         gradient: "from-violet-900 via-fuchsia-900 to-slate-900",
         accentColor: "#a855f7",
-        images: [b1, b2, b3, b4, b5, b6],
+        coverImage: "/cover/branding.png",
+        images: [b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b14, b15, b16, b17, b18, b19, b20],
+    },
+    {
+        id: 18,
+        slug: "logo-design",
+        title: "Logo Design",
+        shortDesc: "Brand-defining logos — lettermarks, monograms, abstract marks & full identity symbols.",
+        description: "A curated showcase of logo design work created for businesses across diverse industries. Each logo is crafted with precision — balancing aesthetics, brand personality, and scalability. Deliverables include vector files, colour variations, and usage guidelines.",
+        category: "Logo",
+        tools: ["Illustrator", "CorelDRAW", "Photoshop"],
+        tags: ["Logo", "Identity", "Brand"],
+        role: "Logo & Brand Designer",
+        output: "Logo suites, brand marks & scalable vector assets",
+        result: "Clients received versatile, production-ready logos used across print and digital touchpoints.",
+        featured: true,
+        gradient: "from-violet-900 via-purple-900 to-slate-900",
+        accentColor: "#a855f7",
+        coverImage: "/cover/logo.png",
+        images: [lo1, lo2, lo3, lo4, lo5, lo6, lo7, lo8, lo9, lo10, lo11, lo12, lo13, lo14, lo15, lo16, lo17, lo18],
     },
     {
         id: 14,
@@ -177,7 +320,8 @@ export const projects = [
         featured: true,
         gradient: "from-pink-900 via-rose-900 to-slate-900",
         accentColor: "#f43f5e",
-        images: [c1, c2, c3, c4, c5],
+        coverImage: "/cover/creative.png",
+        images: [c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15],
     },
     {
         id: 15,
@@ -194,6 +338,8 @@ export const projects = [
         featured: true,
         gradient: "from-orange-900 via-red-900 to-slate-900",
         accentColor: "#f97316",
+        coverImage: "/cover/gym.png",
+        heroImage: "/cover/gym-hero.png",
         images: [g1, g2, g3, g4],
     },
     {
@@ -211,7 +357,8 @@ export const projects = [
         featured: true,
         gradient: "from-green-900 via-emerald-900 to-slate-900",
         accentColor: "#22c55e",
-        images: [s1, s2, s3, s4, s5, s6],
+        coverImage: "/cover/Sports.png",
+        images: [s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14, s15],
     },
     {
         id: 17,
@@ -228,11 +375,12 @@ export const projects = [
         featured: true,
         gradient: "from-cyan-900 via-sky-900 to-slate-900",
         accentColor: "#06b6d4",
+        coverImage: "/cover/Cnc.png",
         images: [cn1, cn2, cn3, cn4, cn5, cn6, cn7, cn8, cn9, cn10, cn11, cn12, cn13, cn14, cn15],
     },
 ];
 
-export const categories = ["All", "Branding", "Creative", "Gym", "Sports", "Logo", "Poster/Social", "Vector Tracing", "CNC/Acoustic", "Laser"];
+export const categories = ["All", "Logo", "Branding", "Creative", "Gym", "Sports", "Vector Tracing", "CNC/Acoustic", "Laser"];
 
 export const caseStudies = projects.filter(p => p.category === "CNC/Acoustic" && p.output);
 

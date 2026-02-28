@@ -3,9 +3,13 @@ import { Outlet, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import useLenis from '../hooks/useLenis';
 
 export default function MainLayout() {
     const { pathname } = useLocation();
+
+    // 🌊 Lenis smooth scroll — active globally
+    useLenis();
 
     // Scroll to top on route change
     useEffect(() => {

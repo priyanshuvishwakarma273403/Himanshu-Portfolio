@@ -1,13 +1,18 @@
 // src/pages/ProjectDetails.jsx
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect, useRef, useState, useCallback } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { gsap } from 'gsap';
 import Container from '../components/Container';
 import Badge from '../components/Badge';
 import Button from '../components/Button';
 import { projects } from '../data/projects';
+import { useScrollReveal } from '../hooks/useGSAPAnimations';
 
 export default function ProjectDetails() {
     const { slug } = useParams();
+    const pageRef = useRef(null);
+    const headerRef = useRef(null);
+    useScrollReveal(pageRef);
 
     const projectIndex = projects.findIndex((p) => p.slug === slug);
     const project = projects[projectIndex];
@@ -21,6 +26,10 @@ export default function ProjectDetails() {
     useEffect(() => {
         if (project) {
             document.title = `${project.title} – Himanshu Vishwakarma`;
+            // Hero animate-in
+            const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+            tl.from('[data-hero-detail]', { y: 30, opacity: 0, duration: 0.7, stagger: 0.12 });
+            return () => tl.kill();
         } else {
             document.title = 'Project Not Found – Himanshu Vishwakarma';
         }
@@ -64,7 +73,7 @@ export default function ProjectDetails() {
 
     const {
         title, shortDesc, description, category, tags, tools,
-        gradient, accentColor, role, output, result, images,
+        gradient, accentColor, role, output, result, images, heroImage,
     } = project;
 
     const hasImages = images && images.length > 0;
@@ -73,7 +82,7 @@ export default function ProjectDetails() {
     const placeholderItems = [1, 2, 3, 4];
 
     return (
-        <>
+        <div ref={pageRef}>
             {/* ── HERO ── */}
             <section className="relative py-28 overflow-hidden">
                 <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-20`} />
@@ -91,7 +100,7 @@ export default function ProjectDetails() {
                     </Link>
 
                     <div className="max-w-3xl">
-                        <div className="flex flex-wrap gap-2 mb-5">
+                        <div data-hero-detail className="flex flex-wrap gap-2 mb-5">
                             <span
                                 className="px-3 py-1 rounded-full text-xs font-semibold"
                                 style={{ background: `${accentColor}22`, color: accentColor, border: `1px solid ${accentColor}44` }}
@@ -103,13 +112,41 @@ export default function ProjectDetails() {
                             ))}
                         </div>
 
-                        <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-6xl text-white leading-none mb-4">
+                        <h1 data-hero-detail className="font-display font-black text-4xl sm:text-5xl lg:text-6xl text-white leading-none mb-4">
                             {title}
                         </h1>
-                        <p className="text-zinc-300 text-xl leading-relaxed">{shortDesc}</p>
+                        <p data-hero-detail className="text-zinc-300 text-xl leading-relaxed">{shortDesc}</p>
                     </div>
                 </Container>
             </section>
+
+            {/* ── HERO BANNER IMAGE (if exists) ── */}
+            {heroImage && (
+                <section className="relative w-full overflow-hidden" style={{ maxHeight: '420px' }}>
+                    <div className="absolute inset-0 z-10" style={{
+                        background: `linear-gradient(to bottom, rgba(9,9,11,0.6) 0%, transparent 30%, transparent 70%, rgba(9,9,11,0.8) 100%)`
+                    }} />
+                    <div
+                        className="absolute inset-0 z-10 opacity-30"
+                        style={{ background: `radial-gradient(ellipse at center, ${accentColor}33 0%, transparent 70%)` }}
+                    />
+                    <img
+                        src={heroImage}
+                        alt={`${title} poster`}
+                        className="w-full object-cover object-center"
+                        style={{ height: '420px' }}
+                    />
+                    {/* Bottom label */}
+                    <div className="absolute bottom-5 left-1/2 -translate-x-1/2 z-20">
+                        <span
+                            className="px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest backdrop-blur-sm"
+                            style={{ background: `${accentColor}33`, color: accentColor, border: `1px solid ${accentColor}55` }}
+                        >
+                            {category} · Design Collection
+                        </span>
+                    </div>
+                </section>
+            )}
 
             {/* ── OVERVIEW ── */}
             <section className="py-16">
@@ -120,13 +157,13 @@ export default function ProjectDetails() {
                         <div className="lg:col-span-2 space-y-10">
 
                             {/* Overview */}
-                            <div>
+                            <div data-gsap="fade-up">
                                 <h2 className="font-display font-bold text-white text-2xl mb-4">Project Overview</h2>
                                 <p className="text-zinc-400 leading-relaxed">{description}</p>
                             </div>
 
                             {/* Process */}
-                            <div>
+                            <div data-gsap="fade-up">
                                 <h2 className="font-display font-bold text-white text-2xl mb-4">Process</h2>
                                 <div className="space-y-4">
                                     {['Brief & Requirements Analysis', 'Design & File Creation', 'Client Review & Revisions', 'Production-Ready Delivery'].map((step, i) => (
@@ -154,10 +191,10 @@ export default function ProjectDetails() {
                             </div>
 
                             {/* ── GALLERY ── */}
-                            <div>
+                            <div data-gsap="fade-up">
                                 <div className="flex items-center justify-between mb-5">
                                     <h2 className="font-display font-bold text-white text-2xl">
-                                        {hasImages ? 'Branding Gallery' : 'Gallery'}
+                                        {hasImages ? `${category} Gallery` : 'Gallery'}
                                     </h2>
                                     {hasImages && (
                                         <span className="text-zinc-500 text-xs font-medium">
@@ -409,8 +446,8 @@ export default function ProjectDetails() {
                                     key={i}
                                     onClick={() => setLightbox(i)}
                                     className={`rounded-full transition-all duration-200 ${i === lightbox
-                                            ? 'w-6 h-2'
-                                            : 'w-2 h-2 bg-zinc-700 hover:bg-zinc-500'
+                                        ? 'w-6 h-2'
+                                        : 'w-2 h-2 bg-zinc-700 hover:bg-zinc-500'
                                         }`}
                                     style={i === lightbox ? { background: accentColor } : {}}
                                     aria-label={`Go to image ${i + 1}`}
@@ -420,6 +457,6 @@ export default function ProjectDetails() {
                     </div>
                 </div>
             )}
-        </>
+        </div>
     );
 }

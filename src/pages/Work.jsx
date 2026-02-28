@@ -1,9 +1,14 @@
 // src/pages/Work.jsx
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Container from '../components/Container';
 import SectionTitle from '../components/SectionTitle';
 import ProjectCard from '../components/ProjectCard';
 import { projects, categories } from '../data/projects';
+import { useScrollReveal } from '../hooks/useGSAPAnimations';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const caseStudies = [
     {
@@ -54,9 +59,24 @@ const caseStudies = [
 
 export default function Work() {
     const [active, setActive] = useState('All');
+    const pageRef = useRef(null);
+    const headerRef = useRef(null);
+
+    useScrollReveal(pageRef);
 
     useEffect(() => {
         document.title = 'Work – Himanshu Vishwakarma';
+
+        // Header animate-in
+        const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+        tl.from(headerRef.current?.querySelectorAll('[data-hero]') || [], {
+            y: 35,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.15,
+        });
+
+        return () => tl.progress(1).kill();
     }, []);
 
     const filtered =
@@ -65,20 +85,20 @@ export default function Work() {
             : projects.filter((p) => p.category === active);
 
     return (
-        <>
+        <div ref={pageRef}>
             {/* ── HEADER ── */}
-            <section className="py-20 relative overflow-hidden">
+            <section className="py-20 relative overflow-hidden" ref={headerRef}>
                 <div className="absolute inset-0 bg-gradient-to-b from-indigo-950/20 to-transparent pointer-events-none" />
                 <Container className="relative z-10">
                     <div className="max-w-2xl">
-                        <span className="inline-flex items-center gap-2 text-indigo-400 text-xs font-semibold uppercase tracking-widest mb-4">
+                        <span data-hero className="inline-flex items-center gap-2 text-indigo-400 text-xs font-semibold uppercase tracking-widest mb-4">
                             <span className="w-6 h-px bg-indigo-500" />
                             Portfolio
                         </span>
-                        <h1 className="font-display font-black text-5xl sm:text-6xl text-white leading-none mb-4">
+                        <h1 data-hero className="font-display font-black text-5xl sm:text-6xl text-white leading-none mb-4">
                             Selected <span className="gradient-text">Work.</span>
                         </h1>
-                        <p className="text-zinc-400 text-lg leading-relaxed">
+                        <p data-hero className="text-zinc-400 text-lg leading-relaxed">
                             Selected design + CNC production-ready work — from brand identities and social media campaigns
                             to acoustic panel production files for corporate offices.
                         </p>
@@ -89,7 +109,7 @@ export default function Work() {
             {/* ── FILTER TABS ── */}
             <section className="pb-12">
                 <Container>
-                    <div className="flex flex-wrap gap-2" role="tablist">
+                    <div data-gsap="fade-up" className="flex flex-wrap gap-2" role="tablist">
                         {categories.map((cat) => (
                             <button
                                 key={cat}
@@ -118,7 +138,7 @@ export default function Work() {
                     {filtered.length === 0 ? (
                         <div className="text-center py-20 text-zinc-600">No projects in this category yet.</div>
                     ) : (
-                        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div data-gsap="stagger" className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                             {filtered.map((project) => (
                                 <ProjectCard key={project.id} project={project} />
                             ))}
@@ -130,13 +150,15 @@ export default function Work() {
             {/* ── CASE STUDIES ── */}
             <section className="py-20 border-t border-zinc-800/50">
                 <Container>
-                    <SectionTitle
-                        label="Case Studies"
-                        title="CNC Production Projects"
-                        subtitle="Large-scale acoustic panel production projects with measurable outcomes."
-                    />
+                    <div data-gsap="fade-up">
+                        <SectionTitle
+                            label="Case Studies"
+                            title="CNC Production Projects"
+                            subtitle="Large-scale acoustic panel production projects with measurable outcomes."
+                        />
+                    </div>
 
-                    <div className="grid sm:grid-cols-2 gap-6">
+                    <div data-gsap="stagger" className="grid sm:grid-cols-2 gap-6">
                         {caseStudies.map((cs) => (
                             <div
                                 key={cs.title}
@@ -180,6 +202,6 @@ export default function Work() {
                     </div>
                 </Container>
             </section>
-        </>
+        </div>
     );
 }

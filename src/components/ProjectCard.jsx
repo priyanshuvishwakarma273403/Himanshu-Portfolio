@@ -3,39 +3,56 @@ import { Link } from 'react-router-dom';
 import Badge from './Badge';
 
 export default function ProjectCard({ project }) {
-    const { slug, title, shortDesc, category, tags, gradient, accentColor } = project;
+    const { slug, title, shortDesc, category, tags, gradient, accentColor, coverImage } = project;
 
     return (
         <div className="group glass-card rounded-2xl overflow-hidden card-hover flex flex-col">
-            {/* Image placeholder — gradient skeleton */}
+            {/* Card Image Area */}
             <div className={`relative h-48 bg-gradient-to-br ${gradient} overflow-hidden`}>
-                {/* Abstract decorative shapes */}
-                <div
-                    className="absolute inset-0 opacity-20"
-                    style={{
-                        backgroundImage: `radial-gradient(circle at 30% 40%, ${accentColor}99 0%, transparent 60%),
-                              radial-gradient(circle at 80% 70%, ${accentColor}44 0%, transparent 50%)`,
-                    }}
-                />
-                <div className="absolute inset-0 flex items-center justify-center">
-                    <div
-                        className="w-16 h-16 rounded-2xl flex items-center justify-center text-2xl font-display font-bold opacity-40"
-                        style={{ background: `${accentColor}22`, color: accentColor }}
-                    >
-                        {title.charAt(0)}
-                    </div>
-                </div>
+                {coverImage ? (
+                    /* Actual cover image */
+                    <img
+                        src={coverImage}
+                        alt={title}
+                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                ) : (
+                    /* Fallback: abstract decorative shapes + letter */
+                    <>
+                        <div
+                            className="absolute inset-0 opacity-20"
+                            style={{
+                                backgroundImage: `radial-gradient(circle at 30% 40%, ${accentColor}99 0%, transparent 60%),
+                                      radial-gradient(circle at 80% 70%, ${accentColor}44 0%, transparent 50%)`,
+                            }}
+                        />
+                        <div className="absolute inset-0 flex items-center justify-center">
+                            <div
+                                className="w-16 h-16 rounded-2xl flex items-center justify-center text-2xl font-display font-bold opacity-40"
+                                style={{ background: `${accentColor}22`, color: accentColor }}
+                            >
+                                {title.charAt(0)}
+                            </div>
+                        </div>
+                    </>
+                )}
+
+                {/* Dark overlay on images so text is readable */}
+                {coverImage && (
+                    <div className="absolute inset-0 bg-black/30" />
+                )}
+
                 {/* Category chip */}
-                <div className="absolute top-3 left-3">
+                <div className="absolute top-3 left-3 z-10">
                     <span
-                        className="text-xs font-semibold px-2.5 py-1 rounded-full"
-                        style={{ background: `${accentColor}22`, color: accentColor, border: `1px solid ${accentColor}44` }}
+                        className="text-xs font-semibold px-2.5 py-1 rounded-full backdrop-blur-sm"
+                        style={{ background: `${accentColor}33`, color: accentColor, border: `1px solid ${accentColor}55` }}
                     >
                         {category}
                     </span>
                 </div>
                 {/* Hover overlay */}
-                <div className="absolute inset-0 bg-indigo-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <div className="absolute inset-0 bg-indigo-900/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-20">
                     <Link
                         to={`/project/${slug}`}
                         className="px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl text-white text-sm font-medium hover:bg-white/20 transition-colors"

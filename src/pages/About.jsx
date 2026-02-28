@@ -1,9 +1,10 @@
 // src/pages/About.jsx
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import Container from '../components/Container';
 import SectionTitle from '../components/SectionTitle';
 import Button from '../components/Button';
 import Badge from '../components/Badge';
+import { useScrollReveal } from '../hooks/useGSAPAnimations';
 
 const designSkills = [
     'Logo & Brand Identity',
@@ -85,25 +86,28 @@ const education = [
 ];
 
 export default function About() {
+    const pageRef = useRef(null);
+    useScrollReveal(pageRef);
+
     useEffect(() => {
         document.title = 'About – Himanshu Vishwakarma';
     }, []);
 
     return (
-        <>
+        <div ref={pageRef}>
             {/* ── PAGE HEADER ── */}
             <section className="py-20 relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-b from-indigo-950/20 to-transparent pointer-events-none" />
                 <Container className="relative z-10">
                     <div className="max-w-2xl">
-                        <span className="inline-flex items-center gap-2 text-indigo-400 text-xs font-semibold uppercase tracking-widest mb-4">
+                        <span data-gsap="fade-up" className="inline-flex items-center gap-2 text-indigo-400 text-xs font-semibold uppercase tracking-widest mb-4">
                             <span className="w-6 h-px bg-indigo-500" />
                             About Me
                         </span>
-                        <h1 className="font-display font-black text-5xl sm:text-6xl text-white leading-none mb-6">
+                        <h1 data-gsap="fade-up" className="font-display font-black text-5xl sm:text-6xl text-white leading-none mb-6">
                             The person <span className="gradient-text">behind the work.</span>
                         </h1>
-                        <p className="text-zinc-400 text-lg leading-relaxed">
+                        <p data-gsap="fade-up" className="text-zinc-400 text-lg leading-relaxed">
                             I'm <span className="text-white font-semibold">Himanshu Vishwakarma</span>, a Graphic Designer and
                             CNC Operator based in New Delhi, India. I bridge the gap between creative visual design
                             and precision manufacturing — from crafting compelling brand identities to producing
@@ -117,8 +121,8 @@ export default function About() {
             <section className="py-10">
                 <Container>
                     <div className="grid lg:grid-cols-5 gap-10 items-start">
-                        {/* Avatar placeholder */}
-                        <div className="lg:col-span-2 flex justify-center">
+                        {/* Avatar */}
+                        <div data-gsap="slide-left" className="lg:col-span-2 flex justify-center">
                             <div className="relative">
                                 {/* Profile image */}
                                 <div className="w-64 h-80 rounded-3xl overflow-hidden ring-2 ring-indigo-500/30 shadow-2xl shadow-indigo-500/20 bg-slate-900">
@@ -139,7 +143,7 @@ export default function About() {
                         </div>
 
                         {/* Text */}
-                        <div className="lg:col-span-3 space-y-4 text-zinc-400 leading-relaxed">
+                        <div data-gsap="slide-right" className="lg:col-span-3 space-y-4 text-zinc-400 leading-relaxed">
                             <p>
                                 With a background spanning <span className="text-white">graphic design and CNC manufacturing</span>,
                                 I bring a rare combination of visual creativity and technical precision to every project.
@@ -168,48 +172,50 @@ export default function About() {
             {/* ── SKILLS ── */}
             <section className="py-20">
                 <Container>
-                    <SectionTitle
-                        label="Expertise"
-                        title="Skills & Capabilities"
-                        subtitle="Dual expertise in visual design and precision CNC production."
-                    />
-                    <div className="grid md:grid-cols-2 gap-6">
-                        {/* Design Skills */}
-                        <div className="glass-card rounded-2xl p-6 card-hover">
-                            <div className="flex items-center gap-3 mb-6">
-                                <div className="w-10 h-10 bg-indigo-500/15 rounded-xl flex items-center justify-center text-xl">🎨</div>
-                                <div>
-                                    <h3 className="font-display font-bold text-white">Graphic Design</h3>
-                                    <p className="text-zinc-500 text-xs">Brand, Print & Digital</p>
+                    <div data-gsap="fade-up">
+                        <SectionTitle
+                            label="Expertise"
+                            title="Skills & Capabilities"
+                            subtitle="Dual expertise in visual design and precision CNC production."
+                        />
+                        <div className="grid md:grid-cols-2 gap-6">
+                            {/* Design Skills */}
+                            <div className="glass-card rounded-2xl p-6 card-hover">
+                                <div className="flex items-center gap-3 mb-6">
+                                    <div className="w-10 h-10 bg-indigo-500/15 rounded-xl flex items-center justify-center text-xl">🎨</div>
+                                    <div>
+                                        <h3 className="font-display font-bold text-white">Graphic Design</h3>
+                                        <p className="text-zinc-500 text-xs">Brand, Print & Digital</p>
+                                    </div>
                                 </div>
+                                <ul className="space-y-2.5">
+                                    {designSkills.map((skill) => (
+                                        <li key={skill} className="flex items-center gap-2.5 text-sm text-zinc-300">
+                                            <span className="w-1.5 h-1.5 bg-indigo-500 rounded-full flex-shrink-0" />
+                                            {skill}
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
-                            <ul className="space-y-2.5">
-                                {designSkills.map((skill) => (
-                                    <li key={skill} className="flex items-center gap-2.5 text-sm text-zinc-300">
-                                        <span className="w-1.5 h-1.5 bg-indigo-500 rounded-full flex-shrink-0" />
-                                        {skill}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
 
-                        {/* CNC Skills */}
-                        <div className="glass-card rounded-2xl p-6 card-hover">
-                            <div className="flex items-center gap-3 mb-6">
-                                <div className="w-10 h-10 bg-blue-500/15 rounded-xl flex items-center justify-center text-xl">⚙️</div>
-                                <div>
-                                    <h3 className="font-display font-bold text-white">CNC & Technical</h3>
-                                    <p className="text-zinc-500 text-xs">Oscillating, Laser & Production</p>
+                            {/* CNC Skills */}
+                            <div className="glass-card rounded-2xl p-6 card-hover">
+                                <div className="flex items-center gap-3 mb-6">
+                                    <div className="w-10 h-10 bg-blue-500/15 rounded-xl flex items-center justify-center text-xl">⚙️</div>
+                                    <div>
+                                        <h3 className="font-display font-bold text-white">CNC & Technical</h3>
+                                        <p className="text-zinc-500 text-xs">Oscillating, Laser & Production</p>
+                                    </div>
                                 </div>
+                                <ul className="space-y-2.5">
+                                    {cncSkills.map((skill) => (
+                                        <li key={skill} className="flex items-center gap-2.5 text-sm text-zinc-300">
+                                            <span className="w-1.5 h-1.5 bg-blue-500 rounded-full flex-shrink-0" />
+                                            {skill}
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
-                            <ul className="space-y-2.5">
-                                {cncSkills.map((skill) => (
-                                    <li key={skill} className="flex items-center gap-2.5 text-sm text-zinc-300">
-                                        <span className="w-1.5 h-1.5 bg-blue-500 rounded-full flex-shrink-0" />
-                                        {skill}
-                                    </li>
-                                ))}
-                            </ul>
                         </div>
                     </div>
                 </Container>
@@ -218,8 +224,8 @@ export default function About() {
             {/* ── TOOLS ── */}
             <section className="py-10">
                 <Container>
-                    <SectionTitle label="Stack" title="Tools I Use" />
-                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                    <div data-gsap="fade-up"><SectionTitle label="Stack" title="Tools I Use" /></div>
+                    <div data-gsap="stagger" className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                         {toolsList.map(({ name, icon, type }) => (
                             <div key={name} className="glass-card rounded-2xl p-4 flex items-center gap-3 card-hover cursor-default">
                                 <span className="text-2xl">{icon}</span>
@@ -236,16 +242,18 @@ export default function About() {
             {/* ── EXPERIENCE ── */}
             <section className="py-20">
                 <Container>
-                    <SectionTitle
-                        label="Career"
-                        title="Experience"
-                        subtitle="A journey across design studios, brand agencies, and production workshops."
-                    />
+                    <div data-gsap="fade-up">
+                        <SectionTitle
+                            label="Career"
+                            title="Experience"
+                            subtitle="A journey across design studios, brand agencies, and production workshops."
+                        />
+                    </div>
                     <div className="relative">
                         {/* Vertical line */}
                         <div className="absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-indigo-500/50 via-indigo-500/20 to-transparent hidden sm:block" />
 
-                        <div className="space-y-8">
+                        <div data-gsap="stagger" className="space-y-8">
                             {experience.map((exp, i) => {
                                 const colors = {
                                     indigo: 'bg-indigo-500 shadow-indigo-500/30',
@@ -290,8 +298,8 @@ export default function About() {
             {/* ── EDUCATION ── */}
             <section className="py-10">
                 <Container>
-                    <SectionTitle label="Education" title="Academic Background" />
-                    <div className="grid sm:grid-cols-2 gap-4">
+                    <div data-gsap="fade-up"><SectionTitle label="Education" title="Academic Background" /></div>
+                    <div data-gsap="stagger" className="grid sm:grid-cols-2 gap-4">
                         {education.map((edu) => (
                             <div key={edu.degree} className="glass-card rounded-2xl p-6 flex gap-4 card-hover">
                                 <div className="text-3xl">{edu.icon}</div>
@@ -323,6 +331,6 @@ export default function About() {
                     </div>
                 </Container>
             </section>
-        </>
+        </div>
     );
 }
