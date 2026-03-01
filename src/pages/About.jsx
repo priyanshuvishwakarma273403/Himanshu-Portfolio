@@ -62,10 +62,10 @@ const experience = [
         color: 'violet',
     },
     {
-        company: 'Freelance / Production Studio',
-        role: 'CNC File Designer & Operator',
+        company: 'Freelance',
+        role: 'Graphic & Visual Designer',
         period: '2023 – Present',
-        desc: 'Specialised in 2D CNC oscillating cutting files for acoustic panels. Delivered 1000+ sheets across Genpact, Blue Star, Aerocity, and Studio XP projects.',
+        desc: 'Partnered with multiple clients to deliver high-quality graphic design solutions, including customized brand identities, social media campaigns, marketing materials, and tailored print assets.',
         color: 'emerald',
     },
 ];
