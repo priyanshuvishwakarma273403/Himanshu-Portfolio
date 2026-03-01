@@ -72,16 +72,28 @@ const experience = [
 
 const education = [
     {
-        degree: 'Diploma in Graphic Design',
-        institute: 'Design Institute, New Delhi',
-        year: '2020–2021',
+        degree: 'B.A. Programme',
+        institute: 'University of Delhi',
+        year: '2021–2024',
         icon: '🎓',
     },
     {
-        degree: 'CNC Machine Operation Certification',
-        institute: 'Technical Training Centre',
-        year: '2022',
-        icon: '⚙️',
+        degree: 'Diploma in Graphic Design',
+        institute: 'Design Institute, New Delhi',
+        year: '2020–2021',
+        icon: '🎨',
+    },
+    {
+        degree: 'CBSE 12th',
+        institute: 'Central Board of Secondary Education',
+        year: '2021',
+        icon: '📚',
+    },
+    {
+        degree: 'CBSE 10th',
+        institute: 'Central Board of Secondary Education',
+        year: '2019',
+        icon: '📚',
     },
 ];
 
