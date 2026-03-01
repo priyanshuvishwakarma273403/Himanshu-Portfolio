@@ -1,4 +1,32 @@
 // src/data/projects.js
+import d01 from '../assets/2dCnc/01.jpeg';
+import d012 from '../assets/2dCnc/012.jpeg';
+import d02 from '../assets/2dCnc/02.jpeg';
+import d03 from '../assets/2dCnc/03.jpeg';
+import d04 from '../assets/2dCnc/04.jpeg';
+import d06 from '../assets/2dCnc/06.jpeg';
+import d07 from '../assets/2dCnc/07.jpeg';
+import d08 from '../assets/2dCnc/08.jpeg';
+import d09 from '../assets/2dCnc/09.jpeg';
+import d10 from '../assets/2dCnc/10.jpeg';
+import d11 from '../assets/2dCnc/11.jpeg';
+import d13 from '../assets/2dCnc/13.jpeg';
+import d14 from '../assets/2dCnc/14.jpeg';
+import d15 from '../assets/2dCnc/15.jpeg';
+import d16 from '../assets/2dCnc/16.jpeg';
+import d17 from '../assets/2dCnc/17.jpeg';
+import d18 from '../assets/2dCnc/18.jpeg';
+import d19 from '../assets/2dCnc/19.jpeg';
+import d20 from '../assets/2dCnc/20.jpeg';
+import d21 from '../assets/2dCnc/21.jpeg';
+import d22 from '../assets/2dCnc/22.jpeg';
+import d24 from '../assets/2dCnc/24.jpeg';
+import d25 from '../assets/2dCnc/25.jpeg';
+import d26 from '../assets/2dCnc/26.jpeg';
+import d27 from '../assets/2dCnc/27.jpeg';
+import d28 from '../assets/2dCnc/28.jpeg';
+
+import d30 from '../assets/2dCnc/30.jpeg';
 import b1 from '../assets/branding/b1.jpg';
 import b2 from '../assets/branding/b2.jpg';
 import b3 from '../assets/branding/b3.jpg';
@@ -26,6 +54,15 @@ import bs3 from '../assets/blueStar/blue3.jpeg';
 import bs4 from '../assets/blueStar/blue4.jpeg';
 import bs5 from '../assets/blueStar/blue5.jpeg';
 import bs6 from '../assets/blueStar/blue6.jpeg';
+import bs7 from '../assets/blueStar/07.jpg';
+import bs8 from '../assets/blueStar/08.jpg';
+import bs9 from '../assets/blueStar/09.jpg';
+import bs10 from '../assets/blueStar/10.jpg';
+import bs11 from '../assets/blueStar/11.jpg';
+import bs12 from '../assets/blueStar/12.jpg';
+import bs13 from '../assets/blueStar/13.jpg';
+import bs14 from '../assets/blueStar/14.jpg';
+import bs15 from '../assets/blueStar/15.jpg';
 
 import z1 from '../assets/Zenpact/Z1.jpg';
 import z2 from '../assets/Zenpact/Z2.jpg';
@@ -124,10 +161,7 @@ import lo16 from '../assets/logo/l16.jpg';
 import lo17 from '../assets/logo/l17.jpg';
 import lo18 from '../assets/logo/l18.jpg';
 
-import g1 from '../assets/gym/g1.jpg';
-import g2 from '../assets/gym/g2.jpg';
-import g3 from '../assets/gym/g3.jpg';
-import g4 from '../assets/gym/g4.jpg';
+
 
 import s1 from '../assets/Sports/s1.jpg';
 import s2 from '../assets/Sports/s2.jpg';
@@ -144,6 +178,58 @@ import s12 from '../assets/Sports/s12.jpg';
 import s13 from '../assets/Sports/s13.jpg';
 import s14 from '../assets/Sports/s14.jpg';
 import s15 from '../assets/Sports/s15.jpg';
+
+import gd01 from '../assets/graphic design/01.jpg';
+import gd02 from '../assets/graphic design/02.jpg';
+import gd03 from '../assets/graphic design/03.jpg';
+import gd04 from '../assets/graphic design/04.jpg';
+import gd05 from '../assets/graphic design/05.jpg';
+import gd06 from '../assets/graphic design/06.jpg';
+import gd07 from '../assets/graphic design/07.jpg';
+import gd08 from '../assets/graphic design/08.jpg';
+import gd09 from '../assets/graphic design/09.jpg';
+import gd10 from '../assets/graphic design/10.jpg';
+import gd11 from '../assets/graphic design/11.jpg';
+import gd12 from '../assets/graphic design/12.jpg';
+import gd13 from '../assets/graphic design/13.jpg';
+import gd14 from '../assets/graphic design/14.jpg';
+import gd15 from '../assets/graphic design/15.jpg';
+import gd16 from '../assets/graphic design/16.jpg';
+import gd17 from '../assets/graphic design/17.jpg';
+import gd18 from '../assets/graphic design/18.jpg';
+import gd19 from '../assets/graphic design/19.jpg';
+import gd20 from '../assets/graphic design/20.jpg';
+import gd21 from '../assets/graphic design/21.jpg';
+import gd22 from '../assets/graphic design/22.jpg';
+import gd23 from '../assets/graphic design/23.jpg';
+import gd24 from '../assets/graphic design/24.jpg';
+import gd25 from '../assets/graphic design/25.jpg';
+import gd26 from '../assets/graphic design/26.jpg';
+import gd27 from '../assets/graphic design/27.jpg';
+import gd28 from '../assets/graphic design/28.jpg';
+import gd29 from '../assets/graphic design/29.jpg';
+import gd30 from '../assets/graphic design/30.jpg';
+
+import a1 from '../assets/Aerocity Commercial/01.jpg';
+import a2 from '../assets/Aerocity Commercial/02.jpg';
+import a3 from '../assets/Aerocity Commercial/03.jpg';
+import a4 from '../assets/Aerocity Commercial/04.jpg';
+import a5 from '../assets/Aerocity Commercial/05.jpg';
+import a6 from '../assets/Aerocity Commercial/06.jpg';
+import a7 from '../assets/Aerocity Commercial/07.jpg';
+import a8 from '../assets/Aerocity Commercial/08.jpg';
+import a9 from '../assets/Aerocity Commercial/09.jpg';
+import a10 from '../assets/Aerocity Commercial/10.jpg';
+import a11 from '../assets/Aerocity Commercial/11.jpg';
+import a12 from '../assets/Aerocity Commercial/12.jpg';
+import a13 from '../assets/Aerocity Commercial/13.jpg';
+import a14 from '../assets/Aerocity Commercial/14.jpg';
+import a15 from '../assets/Aerocity Commercial/15.jpg';
+import a16 from '../assets/Aerocity Commercial/16.jpg';
+import a17 from '../assets/Aerocity Commercial/17.jpg';
+import a18 from '../assets/Aerocity Commercial/18.jpg';
+import a19 from '../assets/Aerocity Commercial/19.jpg';
+import a20 from '../assets/Aerocity Commercial/20.jpg';
 
 import cn1 from '../assets/Cnc/c1.jpg';
 import cn2 from '../assets/Cnc/c2.jpg';
@@ -197,7 +283,7 @@ export const projects = [
         gradient: "from-blue-900 via-cyan-900 to-slate-900",
         accentColor: "#3b82f6",
         coverImage: "/cover/bluestar.png",
-        images: [bs1, bs2, bs3, bs4, bs5, bs6],
+        images: [bs1, bs2, bs3, bs4, bs5, bs6, bs7, bs8, bs9, bs10, bs11, bs12, bs13, bs14, bs15],
     },
     {
         id: 3,
@@ -215,6 +301,7 @@ export const projects = [
         gradient: "from-violet-900 via-purple-900 to-slate-900",
         accentColor: "#8b5cf6",
         coverImage: "/cover/aerocity.png",
+        images: [a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15, a16, a17, a18, a19, a20],
     },
     {
         id: 9,
@@ -252,23 +339,7 @@ export const projects = [
         coverImage: "/cover/Laser Cutting.png",
         images: [l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l18, l19, ld14, ld16, ld17],
     },
-    {
-        id: 12,
-        slug: "cnc-decorative-panels",
-        title: "Decorative CNC Pattern Panels",
-        shortDesc: "Intricate geometric patterns for oscillating CNC decorative panels.",
-        description: "Created complex geometric and floral pattern designs for decorative oscillating CNC panels used in interior design projects. Each pattern was optimised for cutting speed and edge quality.",
-        category: "CNC/Acoustic",
-        tools: ["CorelDRAW", "Illustrator", "Oscillating CNC"],
-        tags: ["CNC", "Pattern", "Decorative"],
-        role: "Designer & CNC Operator",
-        output: "50+ decorative panel patterns",
-        result: "Patterns adopted as standard designs in client's product catalogue.",
-        featured: false,
-        gradient: "from-teal-900 via-cyan-900 to-slate-900",
-        accentColor: "#14b8a6",
-        coverImage: "/cover/cnc-decorative.png",
-    },
+
     {
         id: 13,
         slug: "branding",
@@ -323,25 +394,7 @@ export const projects = [
         coverImage: "/cover/creative.png",
         images: [c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15],
     },
-    {
-        id: 15,
-        slug: "gym",
-        title: "Gym",
-        shortDesc: "Fitness-themed graphic designs — posters, motivational prints & gym branding.",
-        description: "A collection of gym and fitness-focused graphic design work including motivational posters, workout prints, gym branding materials, and high-energy visual content crafted for fitness brands and personal trainers.",
-        category: "Gym",
-        tools: ["Photoshop", "Illustrator", "Canva"],
-        tags: ["Gym", "Fitness", "Poster"],
-        role: "Graphic Designer",
-        output: "Gym posters, prints & branding assets",
-        result: "Delivered bold, high-energy designs used across gym walls and social media.",
-        featured: true,
-        gradient: "from-orange-900 via-red-900 to-slate-900",
-        accentColor: "#f97316",
-        coverImage: "/cover/gym.png",
-        heroImage: "/cover/gym-hero.png",
-        images: [g1, g2, g3, g4],
-    },
+
     {
         id: 16,
         slug: "sports",
@@ -378,9 +431,45 @@ export const projects = [
         coverImage: "/cover/Cnc.png",
         images: [cn1, cn2, cn3, cn4, cn5, cn6, cn7, cn8, cn9, cn10, cn11, cn12, cn13, cn14, cn15],
     },
+    {
+        id: 19,
+        slug: "2d-cnc-file",
+        title: "2D CNC File",
+        shortDesc: "Precision 2D CNC cutting files — geometric patterns, nesting & production-ready artwork.",
+        description: "A focused collection of 2D CNC file design work — including geometric pattern files, nesting-optimised sheets, oscillating blade cutting paths, and decorative interior panel designs. Each file is built for zero-error machine execution with tight tolerances and clean vector paths.",
+        category: "2D CNC",
+        tools: ["CorelDRAW", "Illustrator", "AutoCAD", "Oscillating CNC"],
+        tags: ["CNC", "2D File", "Pattern", "Production"],
+        role: "CNC File Designer & Operator",
+        output: "100+ 2D CNC-ready cutting files",
+        result: "Zero file rejections; production-ready delivery across multiple client projects.",
+        featured: true,
+        gradient: "from-teal-900 via-cyan-900 to-slate-900",
+        accentColor: "#14b8a6",
+        coverImage: "/cover/2d-cnc-file.png",
+        images: [d01, d012, d02, d03, d04, d06, d07, d08, d09, d10, d11, d13, d14, d15, d16, d17, d18, d19, d20, d21, d22, d24, d25, d26, d27, d28, d30],
+    },
+    {
+        id: 20,
+        slug: "graphic-design",
+        title: "Graphic Design",
+        shortDesc: "Creative graphic design work — posters, branding, social media & visual communication.",
+        description: "A comprehensive showcase of graphic design projects spanning brand identity, poster design, social media creatives, typography, and visual campaigns. Each piece is crafted with a strong design language, balancing aesthetics with effective visual communication for diverse clients and industries.",
+        category: "Graphic Design",
+        tools: ["Photoshop", "Illustrator", "CorelDRAW", "Canva"],
+        tags: ["Graphic Design", "Poster", "Branding", "Creative"],
+        role: "Graphic Designer",
+        output: "Print-ready & digital design assets",
+        result: "Delivered impactful visual designs used across digital and physical campaigns.",
+        featured: true,
+        gradient: "from-violet-900 via-fuchsia-900 to-slate-900",
+        accentColor: "#a855f7",
+        coverImage: "/cover/graphic-design.png",
+        images: [gd01, gd02, gd03, gd04, gd05, gd06, gd07, gd08, gd09, gd10, gd11, gd12, gd13, gd14, gd15, gd16, gd17, gd18, gd19, gd20, gd21, gd22, gd23, gd24, gd25, gd26, gd27, gd28, gd29, gd30],
+    },
 ];
 
-export const categories = ["All", "Logo", "Branding", "Creative", "Gym", "Sports", "Vector Tracing", "CNC/Acoustic", "Laser"];
+export const categories = ["All", "Logo", "Branding", "Creative", "Sports", "Vector Tracing", "CNC/Acoustic", "Laser", "2D CNC", "Graphic Design"];
 
 export const caseStudies = projects.filter(p => p.category === "CNC/Acoustic" && p.output);
 
