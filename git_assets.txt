@@ -1,0 +1,239 @@
+﻿src/assets/2dCnc/01.jpeg
+src/assets/2dCnc/012.jpeg
+src/assets/2dCnc/02.jpeg
+src/assets/2dCnc/03.jpeg
+src/assets/2dCnc/04.jpeg
+src/assets/2dCnc/06.jpeg
+src/assets/2dCnc/07.jpeg
+src/assets/2dCnc/08.jpeg
+src/assets/2dCnc/09.jpeg
+src/assets/2dCnc/10.jpeg
+src/assets/2dCnc/11.jpeg
+src/assets/2dCnc/13.jpeg
+src/assets/2dCnc/14.jpeg
+src/assets/2dCnc/15.jpeg
+src/assets/2dCnc/16.jpeg
+src/assets/2dCnc/17.jpeg
+src/assets/2dCnc/18.jpeg
+src/assets/2dCnc/19.jpeg
+src/assets/2dCnc/20.jpeg
+src/assets/2dCnc/21.jpeg
+src/assets/2dCnc/22.jpeg
+src/assets/2dCnc/24.jpeg
+src/assets/2dCnc/25.jpeg
+src/assets/2dCnc/26.jpeg
+src/assets/2dCnc/27.jpeg
+src/assets/2dCnc/28.jpeg
+src/assets/2dCnc/30.jpeg
+src/assets/Aerocity Commercial/01.jpg
+src/assets/Aerocity Commercial/02.jpg
+src/assets/Aerocity Commercial/03.jpg
+src/assets/Aerocity Commercial/04.jpg
+src/assets/Aerocity Commercial/05.jpg
+src/assets/Aerocity Commercial/06.jpg
+src/assets/Aerocity Commercial/07.jpg
+src/assets/Aerocity Commercial/08.jpg
+src/assets/Aerocity Commercial/09.jpg
+src/assets/Aerocity Commercial/10.jpg
+src/assets/Aerocity Commercial/11.jpg
+src/assets/Aerocity Commercial/12.jpg
+src/assets/Aerocity Commercial/13.jpg
+src/assets/Aerocity Commercial/14.jpg
+src/assets/Aerocity Commercial/15.jpg
+src/assets/Aerocity Commercial/16.jpg
+src/assets/Aerocity Commercial/17.jpg
+src/assets/Aerocity Commercial/18.jpg
+src/assets/Aerocity Commercial/19.jpg
+src/assets/Aerocity Commercial/20.jpg
+src/assets/Cnc/c1.jpg
+src/assets/Cnc/c10.jpeg
+src/assets/Cnc/c11.jpeg
+src/assets/Cnc/c12.jpeg
+src/assets/Cnc/c13.jpeg
+src/assets/Cnc/c14.jpeg
+src/assets/Cnc/c15.jpg
+src/assets/Cnc/c2.jpg
+src/assets/Cnc/c3.jpg
+src/assets/Cnc/c4.jpg
+src/assets/Cnc/c5.jpg
+src/assets/Cnc/c6.jpg
+src/assets/Cnc/c7.jpg
+src/assets/Cnc/c8.jpg
+src/assets/Cnc/c9.jpeg
+src/assets/Creative/01.jpg
+src/assets/Creative/02.jpg
+src/assets/Creative/03.jpg
+src/assets/Creative/04.jpg
+src/assets/Creative/05.jpg
+src/assets/Creative/06.jpg
+src/assets/Creative/07.jpg
+src/assets/Creative/08.jpg
+src/assets/Creative/09.jpg
+src/assets/Creative/10.jpg
+src/assets/Creative/11.jpg
+src/assets/Creative/12.jpg
+src/assets/Creative/13.jpg
+src/assets/Creative/14.jpg
+src/assets/Creative/15.jpg
+src/assets/Gym/g1.jpg
+src/assets/Gym/g2.jpg
+src/assets/Gym/g3.jpg
+src/assets/Gym/g4.jpg
+src/assets/Sports/s1.jpg
+src/assets/Sports/s10.jpg
+src/assets/Sports/s11.jpg
+src/assets/Sports/s12.jpg
+src/assets/Sports/s13.jpg
+src/assets/Sports/s14.jpg
+src/assets/Sports/s15.jpg
+src/assets/Sports/s2.jpg
+src/assets/Sports/s3.jpg
+src/assets/Sports/s4.jpg
+src/assets/Sports/s5.jpg
+src/assets/Sports/s6.jpg
+src/assets/Sports/s7.jpg
+src/assets/Sports/s8.jpg
+src/assets/Sports/s9.jpg
+src/assets/Zenpact/Z1.jpg
+src/assets/Zenpact/Z10.jpg
+src/assets/Zenpact/Z11.jpg
+src/assets/Zenpact/Z12.jpg
+src/assets/Zenpact/Z13.jpg
+src/assets/Zenpact/Z14.jpg
+src/assets/Zenpact/Z16.jpg
+src/assets/Zenpact/Z18.jpg
+src/assets/Zenpact/Z19.jpg
+src/assets/Zenpact/Z2.jpg
+src/assets/Zenpact/Z20.jpg
+src/assets/Zenpact/Z21.jpg
+src/assets/Zenpact/Z22.jpg
+src/assets/Zenpact/Z23.jpg
+src/assets/Zenpact/Z24.jpg
+src/assets/Zenpact/Z25.jpg
+src/assets/Zenpact/Z27.jpg
+src/assets/Zenpact/Z28.jpg
+src/assets/Zenpact/Z3.jpg
+src/assets/Zenpact/Z4.jpg
+src/assets/Zenpact/Z5.jpg
+src/assets/Zenpact/Z6.jpg
+src/assets/Zenpact/Z7.jpg
+src/assets/Zenpact/Z8.jpg
+src/assets/Zenpact/Z9.jpg
+src/assets/blueStar/07.jpg
+src/assets/blueStar/08.jpg
+src/assets/blueStar/09.jpg
+src/assets/blueStar/10.jpg
+src/assets/blueStar/11.jpg
+src/assets/blueStar/12.jpg
+src/assets/blueStar/13.jpg
+src/assets/blueStar/14.jpg
+src/assets/blueStar/15.jpg
+src/assets/blueStar/blue1.jpeg
+src/assets/blueStar/blue2.jpeg
+src/assets/blueStar/blue3.jpeg
+src/assets/blueStar/blue4.jpeg
+src/assets/blueStar/blue5.jpeg
+src/assets/blueStar/blue6.jpeg
+src/assets/branding/b1.jpg
+src/assets/branding/b10.jpg
+src/assets/branding/b11.jpg
+src/assets/branding/b12.jpg
+src/assets/branding/b13.jpg
+src/assets/branding/b14.jpg
+src/assets/branding/b15.jpg
+src/assets/branding/b16.jpg
+src/assets/branding/b17.jpg
+src/assets/branding/b18.jpg
+src/assets/branding/b19.jpg
+src/assets/branding/b2.jpg
+src/assets/branding/b20.jpg
+src/assets/branding/b3.jpg
+src/assets/branding/b4.jpg
+src/assets/branding/b5.jpg
+src/assets/branding/b6.jpg
+src/assets/branding/b7.jpg
+src/assets/branding/b8.jpg
+src/assets/branding/b9.jpg
+src/assets/graphic design/01.jpg
+src/assets/graphic design/02.jpg
+src/assets/graphic design/03.jpg
+src/assets/graphic design/04.jpg
+src/assets/graphic design/05.jpg
+src/assets/graphic design/06.jpg
+src/assets/graphic design/07.jpg
+src/assets/graphic design/08.jpg
+src/assets/graphic design/09.jpg
+src/assets/graphic design/10.jpg
+src/assets/graphic design/11.jpg
+src/assets/graphic design/12.jpg
+src/assets/graphic design/13.jpg
+src/assets/graphic design/14.jpg
+src/assets/graphic design/15.jpg
+src/assets/graphic design/16.jpg
+src/assets/graphic design/17.jpg
+src/assets/graphic design/18.jpg
+src/assets/graphic design/19.jpg
+src/assets/graphic design/20.jpg
+src/assets/graphic design/21.jpg
+src/assets/graphic design/22.jpg
+src/assets/graphic design/23.jpg
+src/assets/graphic design/24.jpg
+src/assets/graphic design/25.jpg
+src/assets/graphic design/26.jpg
+src/assets/graphic design/27.jpg
+src/assets/graphic design/28.jpg
+src/assets/graphic design/29.jpg
+src/assets/graphic design/30.jpg
+src/assets/laser/download (14).jpg
+src/assets/laser/download (16).jpg
+src/assets/laser/download (17).jpg
+src/assets/laser/l1.jpg
+src/assets/laser/l10.jpg
+src/assets/laser/l11.jpg
+src/assets/laser/l12.jpg
+src/assets/laser/l13.jpg
+src/assets/laser/l14.jpg
+src/assets/laser/l15.jpg
+src/assets/laser/l18.jpg
+src/assets/laser/l19.jpg
+src/assets/laser/l2.jpg
+src/assets/laser/l3.jpg
+src/assets/laser/l4.jpg
+src/assets/laser/l5.jpg
+src/assets/laser/l6.jpg
+src/assets/laser/l7.jpg
+src/assets/laser/l8.jpg
+src/assets/laser/l9.jpg
+src/assets/logo/l1.jpg
+src/assets/logo/l10.jpg
+src/assets/logo/l11.jpg
+src/assets/logo/l12.jpg
+src/assets/logo/l13.jpg
+src/assets/logo/l14.jpg
+src/assets/logo/l15.jpg
+src/assets/logo/l16.jpg
+src/assets/logo/l17.jpg
+src/assets/logo/l18.jpg
+src/assets/logo/l2.jpg
+src/assets/logo/l3.jpg
+src/assets/logo/l4.jpg
+src/assets/logo/l5.jpg
+src/assets/logo/l6.jpg
+src/assets/logo/l7.jpg
+src/assets/logo/l8.jpg
+src/assets/logo/l9.jpg
+src/assets/react.svg
+src/assets/vector/13.jpg
+src/assets/vector/v1.jpg
+src/assets/vector/v10.jpg
+src/assets/vector/v11.jpg
+src/assets/vector/v12.jpg
+src/assets/vector/v14.jpg
+src/assets/vector/v2.jpg
+src/assets/vector/v3.jpg
+src/assets/vector/v4.jpg
+src/assets/vector/v5.jpg
+src/assets/vector/v6.jpg
+src/assets/vector/v7.jpg
+src/assets/vector/v8.jpg
+src/assets/vector/v9.jpg
